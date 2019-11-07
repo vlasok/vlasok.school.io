@@ -1,0 +1,522 @@
+@font-face{
+	font-family: 'Solomon';
+	src: url('../fonts/solomon_sans_normal.woff2') format('woff2'),
+		url('../fonts/solomon_sans_normal.woff') format('woff');
+}
+
+@font-face{
+	font-family: 'Solomon Bold';
+	src: url('../fonts/solomon_sans_bold.woff2') format('woff2'),
+		url('../fonts/solomon_sans_bold.woff') format('woff');
+}
+
+
+body{ 
+	margin: 0;
+	font-family: 'Solomon Bold', sans-serif;
+}
+
+ul, li{
+	display: inline-block;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	color: #244c8e;
+	text-decoration: none;
+}
+
+li a img{
+	margin-right: 5px;
+}
+
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.header__bar{
+	background: #d4d8e1;
+	padding: 10px;
+}
+
+.header__right{
+	float: right;
+}
+
+ul.contacts{
+	margin-right: 20px;
+}
+
+ul.languages{
+	font-size: 13px;
+}
+
+.active{
+	background: #244c8e;
+	color: white;
+	padding: 4px 6px;
+	border-radius: 6px;
+}
+
+.header__bar a{
+	padding: 4px 6px;
+	border-radius: 6px;
+	font-size: 13px;
+}
+
+.header__bar a:hover{
+	background: #f6f6f6;
+	color: #244c8e;
+}
+
+.location a{
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+.user__email::before{
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 8px;
+	background-image: url('../img/email.svg');
+	background-repeat: no-repeat;
+	margin-right: 4px;
+}
+
+.user__phone::before{
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 10px;
+	background-image: url('../img/mobile_tel.svg');
+	background-repeat: no-repeat;
+	margin-right: 3px;
+}
+
+.header__menu{
+	padding: 10px 0;
+	background: white;
+}
+
+.nav__logo, .nav__right{
+	display: inline-block;
+}
+
+.nav__logo{
+	margin: 
+}
+
+
+.nav__right{
+	float: right;	
+}
+
+.nav__right a:hover{
+	background: #f6f6f6;
+	padding: 4px 8px;
+	font-size: 15px;
+	letter-spacing: 0.3px;
+}
+
+.header__menu li{
+	margin-right: 15px;
+	vertical-align: middle;
+}
+
+p{
+	margin: 0;
+	font-size: 11px;
+}
+
+.nav__right li:hover .dropdown{
+	display: block;
+}
+
+.nav__right a{
+	text-transform: uppercase;
+}
+
+.nav__right-menu li{
+	padding-bottom: 10px;
+}
+
+.dropdown{
+	display: none;
+	position: absolute;
+	background: white;
+	box-shadow: 0 2px 15px rgba(0,0,0,.06);
+	border-radius: 6px;
+	margin-top: 5px;
+}
+
+.dropdown li{
+	display: block;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.dropdown li a{
+	display: block;
+	padding: 6px 20px;
+	text-transform: none;
+	font-size: 14px;
+	border-radius: 0;
+}
+
+.dropdown li:first-of-type a{
+	border-radius: 6px 6px 0 0
+}
+
+.dropdown li:last-of-type a{
+	border-radius: 0 0 6px 6px
+}
+
+
+li {
+	color: #244c8e;
+}
+
+.header__nav-btn{
+	width: 105px;
+	font-size: 9px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+	background: #4ed401;
+	border: none;
+	border-radius: 5px;
+	padding: 6px 0;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+button:hover.header__nav-btn{
+	background: #54e600;
+}
+
+hr{
+	width: 90%;
+	border: 0.5px solid #e3e7ed;
+}
+
+
+div.background{
+	background-image: url('../img/background.jpg');
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	padding: 80px 0 40px 0;
+}
+
+.foundation__articls{
+	width: 100%; 
+	justify-content: space-between;
+	display: flex;
+}
+
+
+.articls__stat-button{
+	width: 50%;
+	height: 200px;	
+}
+
+.articls__stat-map{
+	width: 50%;
+	background-image: url('../img/map-ukraine.svg');
+	background-repeat: no-repeat;
+	height: 400px;
+	position: relative;
+}
+
+.Kyiv {
+	position: absolute;
+	top: 85px;
+	right: 300px;
+	color: #f6f6f6;	
+	font-size: 14px;
+}
+
+.Kharkiv {
+	position: absolute;
+	top: 110px;
+	right: 125px;
+	color: #f6f6f6;
+	font-size: 14px;
+}
+
+.Dnipro {
+	position: absolute;
+	top: 180px;
+	right: 160px;
+	color: #f6f6f6;
+	font-size: 14px;
+}
+
+.Odesa {
+	position: absolute;
+	top: 285px;
+	right: 300px;
+	color: #f6f6f6;
+	font-size: 14px;
+}
+
+.pin{
+	position: absolute;
+	top: 70px;
+	right: 300px;
+}
+
+.slogan{
+	color: #4ed401;
+	font-size: 50px;
+	padding:0 0 30px 0;
+	margin: 20px 0 30px 0;
+	border-bottom: 1px solid white;
+}
+
+.stat__button{
+	background: #54e600;
+	color:#f6f6f6;
+	text-transform: uppercase;
+	padding: 10px 20px 10px 20px;
+	border-radius: 6px;
+	font-size: 12px; 
+	border: 1px solid #54e600;
+}
+
+.intro__stat{
+	display: flex;
+	border-bottom: 1px solid #6882a3;
+	padding: 20px 0 0 0;
+}
+.intro__stat-users{
+	display: flex;
+	width: 50%;
+	color: white;
+	 align-items: center;
+}
+
+.intro__stat-youtube{
+	display: flex;
+	width: 50%;
+	align-items: center;
+}
+
+.users__eight{
+	font-size: 50px;
+	color: #4ed401;
+}
+
+.users__plus{
+	background: #4ed401;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	color: #052345;
+	text-align: center;
+	margin: 0 10px 0 7px;
+}
+
+.users__school{
+	margin: 12px 0 0 15px;
+	display: inline-block;
+	font-size: 18px;
+	display: inline-block;
+}
+
+.youtube__text{
+	color: #f6f6f6;
+	margin: 0 0 0 15px;
+}
+
+.intro__big-chanel{
+	color: #4ed401;
+	font-size: 20px;
+}
+
+.intro__stat-two{
+	width: 1200px;
+	margin: auto;
+	display: flex;
+	padding: 20px 0 0 0;
+}
+
+.stat-two__about-school{
+	display: flex;
+	color: #f6f6f6;
+	width: 30%;
+}
+
+.school__text{
+	display: flex;
+}
+
+.stat-two_six{
+	color: #4ed401;
+	font-size: 25px;
+}
+
+.stat-two_year{
+	background: #4ed401;
+	padding: 3px 5px 3px 5px;
+	border-radius: 6px;
+	color: #052345;
+	text-transform: uppercase;
+	font-size: 11px;
+	width: 18px;
+	height: 13px;
+	margin: 6px 0 0 7px;
+}
+
+.stat-two_text{
+	font-size: 14px;
+}
+
+.stat-two_site{
+	display: flex;
+	color: #f6f6f6;
+	width: 40%;
+	padding: 0 0 0 80px;
+}
+
+.site__text{
+	display: flex;
+}
+
+.stat-two_two-k{
+	color: #4ed401;
+	font-size: 25px;
+}
+
+.stat-two_plus{
+	width: 18px;
+	height: 18px;
+	background: #4ed401;
+	border-radius: 50%;
+	color: #052345;
+	text-align: center;
+	margin: 6px 0 0 7px;
+	font-size: 15px;
+}
+
+.stat-two_cities{
+	display: flex;
+	color: #f6f6f6;
+	width: 30%;
+}
+
+.cities__blocks{
+	display: flex;
+}
+
+.cities_four{
+	color: #4ed401;
+	font-size: 25px; 
+}
+
+.stat__cities{
+	background: #4ed401;
+	width: 60px;
+	height: 16px;
+	padding: 2px 0 0 0;
+	border-radius: 6px;
+	color: #052345;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-align: center;
+	margin: 7px 0 0 7px;
+}
+
+.cities__text{
+	font-size: 14px;
+}
+
+.intro__stat-three{
+	width: 1200px;
+	margin: auto;
+	display: flex;
+	padding: 20px 0 0 0;
+}
+
+.stat-three__teachers{
+	display: flex;
+	color: #f6f6f6;
+	width: 30%;
+}
+
+.stat-three__blocks{
+	display: flex;
+}
+
+.stat-three__hundred{
+	color: #4ed401;
+	font-size: 25px;
+}
+
+.stat-three__plus{
+	width: 18px;
+	height: 18px;
+	background: #4ed401;
+	border-radius: 50%;
+	color: #052345;
+	text-align: center;
+	margin: 6px 0 0 7px;
+	font-size: 15px;
+}
+
+.stat-three__text{
+	font-size: 14px;
+}
+
+.stat-three__work{
+	display: flex;
+	color: #f6f6f6;
+	width: 40%;
+	padding: 0 0 0 80px;
+}
+
+.stat-three__43{
+	color: #4ed401;
+	font-size: 25px;
+}
+
+.stat-three__percent{
+	width: 16px;
+	height: 16px;
+	background: #4ed401;
+	border-radius: 6px;
+	color: #052345;
+	text-align: center;
+	margin: 6px 0 0 7px;
+	font-size: 11px;
+	padding: 3px 3px 0 3px;
+}
+
+.stat-three__money{
+	display: flex;
+	color: #f6f6f6;
+	width: 30%;
+}
+
+.stat-three__cash{
+	color: #4ed401;
+	font-size: 25px;
+}
+
+.stat-three__uah{
+	background: #4ed401;
+	width: 60px;
+	height: 16px;
+	padding: 2px 0 0 0;
+	border-radius: 6px;
+	color: #052345;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-align: center;
+	margin: 7px 0 0 7px;
